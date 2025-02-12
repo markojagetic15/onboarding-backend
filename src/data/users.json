@@ -1,3 +1,13 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "79d16f04-4322-4ed0-8be6-66818bc8bae8",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@gmail.com",
+      "password": "Test.123!",
+      "created_at": "2021-01-01T00:00:00.000Z",
+      "updated_at": "2021-01-01T00:00:00.000Z"
+    }
+  ]
 }
