@@ -71,12 +71,19 @@ export class AuthService {
   }
 
   async resetPassword(body: ResetPasswordDto) {
-    const { id, password } = body;
+    const { id, password, old_password } = body;
 
     const user = await this.userRepository.findById(id);
 
     if (!user) {
       throw new HttpException('User not found', HttpStatus.NOT_FOUND);
+    }
+
+    if (user.password !== old_password) {
+      throw new HttpException(
+        'Old password is incorrect',
+        HttpStatus.UNAUTHORIZED,
+      );
     }
 
     user.password = password;

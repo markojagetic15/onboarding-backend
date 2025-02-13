@@ -5,7 +5,6 @@ import { AuthController } from '@application/controllers/auth/auth.controller';
 import { UserService } from '@services/user/user.service';
 import { AuthService } from '@services/auth/auth.service';
 import { UserRepository } from '@infrastructure/user.repository';
-import { AuthRepository } from '@infrastructure/auth.repository';
 
 @Module({
   imports: [
@@ -15,6 +14,6 @@ import { AuthRepository } from '@infrastructure/auth.repository';
     }),
   ],
   controllers: [UserController, AuthController],
-  providers: [UserService, AuthService, UserRepository, AuthRepository],
+  providers: [UserService, AuthService, UserRepository],
 })
 export class AppModule {}

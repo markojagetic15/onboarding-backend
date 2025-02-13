@@ -7,6 +7,11 @@ export class ResetPasswordDto {
   @IsNotEmpty()
   @IsString()
   @Length(8, 20)
+  old_password: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @Length(8, 20)
   @Matches(/((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/, {
     message: 'password too weak',
   })

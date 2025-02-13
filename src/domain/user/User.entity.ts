@@ -6,4 +6,5 @@ export class User {
   password: string;
   created_at: Date;
   updated_at: Date;
+  profile_picture: string;
 }
