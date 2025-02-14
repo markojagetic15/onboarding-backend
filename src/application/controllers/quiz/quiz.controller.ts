@@ -11,6 +11,7 @@ import {
 import { GetQuestionsDto } from '@application/dto/quiz/get-questions.dto';
 import { QuizService } from '@services/quiz/quiz.service';
 import { CreateQuizDto } from '@application/dto/quiz/create-quiz.dto';
+import { GetQuizzesDto } from '@application/dto/quiz/get-quizzes.dto';
 
 @Controller()
 export class QuizController {
@@ -47,8 +48,8 @@ export class QuizController {
   }
 
   @Get('/quizzes')
-  async getQuizzes() {
-    return this.quizService.getQuizzes();
+  async getQuizzes(@Query() query: GetQuizzesDto) {
+    return this.quizService.getQuizzes(query);
   }
 
   @Delete('/quizzes/:id')

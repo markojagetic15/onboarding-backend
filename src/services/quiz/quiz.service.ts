@@ -9,6 +9,7 @@ import { CreateQuizDto } from '@application/dto/quiz/create-quiz.dto';
 import { v4 as uuidv4 } from 'uuid';
 import fs from 'fs';
 import { Quiz } from '@domain/quiz/Quiz.entity';
+import { GetQuizzesDto } from '@application/dto/quiz/get-quizzes.dto';
 
 @Injectable()
 export class QuizService {
@@ -83,13 +84,21 @@ export class QuizService {
     return quizzes[quizIndex];
   }
 
-  async getQuizzes(): Promise<Quiz[]> {
+  async getQuizzes(query: GetQuizzesDto): Promise<Quiz[]> {
+    const { search } = query;
+
     const quizzes = JSON.parse(
       fs.readFileSync('src/data/quizzes.json', 'utf-8'),
     );
 
     if (!quizzes) {
       return [];
+    }
+
+    if (search) {
+      return quizzes.filter((quiz: Quiz) =>
+        quiz.title.toLowerCase().trim().includes(search.toLowerCase().trim()),
+      );
     }
 
     return quizzes;
