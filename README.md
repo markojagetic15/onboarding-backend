@@ -1,6 +1,6 @@
 ## Description
 
-This project is a simple API that allows you to create, read, update and delete listings. It is built with NestJS and uses a PostgreSQL database.
+This project is a simple API that allows you to create, read, update and delete quizzes. It is built with NestJS.
 
 ## Project setup
 
