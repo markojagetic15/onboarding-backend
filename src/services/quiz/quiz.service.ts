@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { UserRepository } from '@infrastructure/user.repository';
 import { GetQuestionsDto } from '@application/dto/quiz/get-questions.dto';
 import { HttpService } from '@nestjs/axios';
 import { firstValueFrom } from 'rxjs';
@@ -13,10 +12,7 @@ import { Quiz } from '@domain/quiz/Quiz.entity';
 
 @Injectable()
 export class QuizService {
-  constructor(
-    private readonly userRepository: UserRepository,
-    private readonly httpService: HttpService,
-  ) {}
+  constructor(private readonly httpService: HttpService) {}
 
   async getQuestions(query: GetQuestionsDto) {
     const { amount, category, difficulty, type } = query;
