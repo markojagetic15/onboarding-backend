@@ -8,4 +8,5 @@ export class CreateQuizDto {
   }[];
   title: string;
   description: string;
+  category: string;
 }

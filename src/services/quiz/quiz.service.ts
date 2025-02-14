@@ -39,7 +39,7 @@ export class QuizService {
   }
 
   async createQuiz(body: CreateQuizDto): Promise<Quiz> {
-    const { title, description, questions } = body;
+    const { title, description, questions, category } = body;
 
     const quizzes = JSON.parse(
       fs.readFileSync('src/data/quizzes.json', 'utf-8'),
@@ -50,6 +50,7 @@ export class QuizService {
       questions,
       title,
       description,
+      category,
     };
 
     quizzes.push(quiz);
