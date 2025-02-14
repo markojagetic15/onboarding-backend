@@ -17,9 +17,10 @@ export class QuizService {
 
   async getQuestions(query: GetQuestionsDto) {
     const { amount, category, difficulty, type } = query;
-    const API = `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}&type=${type}`;
 
-    const response = this.httpService.get(API);
+    const response = this.httpService.get(
+      `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}&type=${type}`,
+    );
 
     const questions = await firstValueFrom(response);
 

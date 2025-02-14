@@ -11,5 +11,6 @@ export class Question {
   type: string;
   difficulty: string;
   category: number;
+  index: number;
   options?: string[];
 }

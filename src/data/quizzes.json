@@ -6,6 +6,7 @@
     "category": "General Knowledge",
     "questions": [
       {
+        "index": 1,
         "question": "What is the capital of France?",
         "correct_answer": "Paris",
         "type": "multiple",
@@ -19,6 +20,7 @@
         "category": "General Knowledge"
       },
       {
+        "index": 2,
         "question": "What is the capital of Spain?",
         "correct_answer": "Madrid",
         "type": "multiple",
@@ -32,6 +34,7 @@
         "category": "General Knowledge"
       },
       {
+        "index": 3,
         "question": "What is the capital of Germany?",
         "correct_answer": "Berlin",
         "type": "multiple",

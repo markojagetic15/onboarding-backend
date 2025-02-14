@@ -1,11 +1,7 @@
+import { Question } from '@domain/quiz/Quiz.entity';
+
 export class CreateQuizDto {
-  questions: {
-    question: string;
-    correct_answer: string;
-    type: string;
-    difficulty: string;
-    category: number;
-  }[];
+  questions: Question[];
   title: string;
   description: string;
   category: string;
