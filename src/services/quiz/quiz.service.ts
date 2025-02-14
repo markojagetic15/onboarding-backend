@@ -38,14 +38,7 @@ export class QuizService {
   }
 
   async createQuiz(body: CreateQuizDto): Promise<Quiz> {
-    const { title, description } = body;
-
-    const questions = body.questions.map((question) => {
-      return {
-        ...question,
-        id: uuidv4(),
-      };
-    });
+    const { title, description, questions } = body;
 
     const quizzes = JSON.parse(
       fs.readFileSync('src/data/quizzes.json', 'utf-8'),
@@ -66,14 +59,7 @@ export class QuizService {
   }
 
   async updateQuiz(id: string, body: CreateQuizDto): Promise<Quiz> {
-    const { title, description } = body;
-
-    const questions = body.questions.map((question) => {
-      return {
-        ...question,
-        id: uuidv4(),
-      };
-    });
+    const { title, description, questions } = body;
 
     const quizzes = JSON.parse(
       fs.readFileSync('src/data/quizzes.json', 'utf-8'),
