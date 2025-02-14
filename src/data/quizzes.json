@@ -1,36 +1,96 @@
-{
-  "quizzes": [
-    {
-      "id": "aeb5f72b-bd3a-4608-bae5-097f46ea087a",
-      "title": "Quiz 1",
-      "description": "This is the first quiz",
-      "category": "General Knowledge",
-      "questions": [
-        {
-          "question": "What is the capital of France?",
-          "correct_answer": "Paris",
-          "type": "multiple",
-          "options": ["Paris", "London", "Berlin", "Madrid"],
-          "difficulty": "easy",
-          "category": "General Knowledge"
-        },
-        {
-          "question": "What is the capital of Spain?",
-          "correct_answer": "Madrid",
-          "type": "multiple",
-          "options": ["Paris", "London", "Berlin", "Madrid"],
-          "difficulty": "easy",
-          "category": "General Knowledge"
-        },
-        {
-          "question": "What is the capital of Germany?",
-          "correct_answer": "Berlin",
-          "type": "multiple",
-          "options": ["Paris", "London", "Berlin", "Madrid"],
-          "difficulty": "easy",
-          "category": "General Knowledge"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "aeb5f72b-bd3a-4608-bae5-097f46ea087a",
+    "title": "Quiz 1",
+    "description": "This is the first quiz",
+    "category": "General Knowledge",
+    "questions": [
+      {
+        "question": "What is the capital of France?",
+        "correct_answer": "Paris",
+        "type": "multiple",
+        "options": [
+          "Paris",
+          "London",
+          "Berlin",
+          "Madrid"
+        ],
+        "difficulty": "easy",
+        "category": "General Knowledge"
+      },
+      {
+        "question": "What is the capital of Spain?",
+        "correct_answer": "Madrid",
+        "type": "multiple",
+        "options": [
+          "Paris",
+          "London",
+          "Berlin",
+          "Madrid"
+        ],
+        "difficulty": "easy",
+        "category": "General Knowledge"
+      },
+      {
+        "question": "What is the capital of Germany?",
+        "correct_answer": "Berlin",
+        "type": "multiple",
+        "options": [
+          "Paris",
+          "London",
+          "Berlin",
+          "Madrid"
+        ],
+        "difficulty": "easy",
+        "category": "General Knowledge"
+      }
+    ]
+  },
+  {
+    "id": "57d1e076-6400-4843-814d-6efd48beea9a",
+    "questions": [
+      {
+        "question": "What is the capital of France?",
+        "correct_answer": "Paris",
+        "type": "multiple",
+        "options": [
+          "Paris",
+          "London",
+          "Berlin",
+          "Madrid"
+        ],
+        "difficulty": "easy",
+        "category": "General Knowledge"
+      },
+      {
+        "question": "What is the capital of Spain?",
+        "correct_answer": "Madrid",
+        "type": "multiple",
+        "options": [
+          "Paris",
+          "London",
+          "Berlin",
+          "Madrid"
+        ],
+        "difficulty": "easy",
+        "category": "General Knowledge"
+      },
+      {
+        "question": "What is the capital of Germany?",
+        "correct_answer": "Berlin",
+        "type": "multiple",
+        "options": [
+          "Paris",
+          "London",
+          "Berlin",
+          "Madrid"
+        ],
+        "difficulty": "easy",
+        "category": "General Knowledge"
+      }
+    ],
+    "title": "Quiz 1",
+    "description": "This is the first quiz",
+    "category": "General Knowledge"
+  }
+]
